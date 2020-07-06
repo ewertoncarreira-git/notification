@@ -15,12 +15,13 @@ $novoEmail = new Email(
         , 'From Name'          
 );
 
-$novoEmail->sendEmail("Assunto de Teste"
-        , "<p>Este é um e-mail de <b>teste</b></p>"
-        , "ewertoncarreira@gmail.com"
-        , "Ewerton Carreira - Remetente"
-        , "ewertoncarreira@gmail.com"
-        , "Ewerton Carreira - Destinatário"
+$novoEmail->sendEmail(
+        'Subject'
+        , 'Content'
+        , 'replay@email.com'
+        , 'Replay Name'
+        , "address@email.com"
+        , "Address Name"
 );
 
 var_dump($novoEmail);
